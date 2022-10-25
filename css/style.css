@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 1px 368px;
+}
+.clearfix{
+    clear: both;
+}
+body{
+    border: 2px solid red;
+}
+.circles{
+    width: 150px;
+    height: 150px;
+    margin-left: 70px;
+    margin-top: 55px;
+    transform: rotate(-45deg);
+    animation: rotate 10s ease infinite;
+}
+.row{
+    position: absolute;
+}
+.circles .row span{
+    border-radius: 50%;
+    width: 3px;
+    height: 3px;
+    float: left;
+    margin-left: 12px;
+}
+
+.row2 span{
+    margin-top: 16px;
+}
+.row3 span{
+    margin-top: 32px;
+}
+.row4 span{
+    margin-top: 48px;
+}
+.row5 span{
+    margin-top: 64px;
+}
+.row6 span{
+    margin-top: 80px;
+}
+.row7 span{
+    margin-top: 96px;
+}
+.row8 span{
+    margin-top:112px;
+}
+.circle1{
+    display: block;
+    transform: scale(1);
+    background-color: #9f089f;
+    animation: scale 1.5s ease-in infinite alternate 1s;
+}
+.circle2{
+    display: block;
+    transform: scale(1.5);
+    background-color: purple;
+    animation: scale 1s linear 0.1s infinite alternate;
+   animation-delay: 0.2s;
+}
+.circle3{
+    display: block;
+    transform: scale(1.8);
+    background-color: #f68195;
+    animation: scale 1s linear 0.1s infinite alternate;
+    animation-delay: 0.3s;
+}
+.circle4{
+    display: block;
+    transform: scale(2);
+    background-color: #ff0068;
+    animation: scale 1s linear 0.1s infinite alternate;
+    animation-delay: 0.4s;
+}
+.circle5{
+    display: block;
+    transform: scale(2.5);
+    background-color: #b7002e;
+    animation: scale 1s linear 0.1s infinite alternate;
+    animation-delay: 0.5s;
+}
+.circle6{
+    display: block;
+    transform: scale(3);
+    background-color: #ff0015;
+    animation: scale 1s linear 0.1s infinite alternate;
+    animation-delay: 0.6s;
+}
+.circle7{
+    display: block;
+    transform: scale(3.5);
+    background-color: #ff5800;
+    animation: scale 1s linear 0.1s infinite alternate;
+    animation-delay: 0.7s;
+}
+.circle8{
+    display: block;
+    transform: scale(4);
+    background-color: #ff7d00;
+    animation: scale 1s linear 0.1s infinite alternate;
+    animation-delay: 0.8s;
+}
+.circle9{
+    display: block;
+    transform: scale(5.8);
+    background-color: yellow;
+    animation: scale 1s linear 0.1s infinite alternate;
+    animation-delay: 0.9s;
+}
+.circle10{
+    display: block;
+    transform: scale(6.5);
+    background-color: blue;
+    animation: scale 1s linear 0.1s infinite alternate;
+    animation-delay: 1s;
+}
+.circle11{
+    display: block;
+    transform: scale(7.5);
+    background-color: darkblue;
+    animation: scale 1s linear 0.1s infinite alternate;
+    animation-delay: 1.1s;
+}
+.circle12{
+    display: block;
+    transform: scale(8.5);
+    background-color: 48008b;
+    animation: scale 1s linear 0.1s infinite alternate;
+    animation-delay: 1.2s;
+}
+.circle13{
+    display: block;
+    transform: scale(9.5);
+    background-color: mediumpurple;
+    animation: scale 1s linear 0.1s infinite alternate;
+    animation-delay: 1.3s;
+}
+.circle14{
+    display: block;
+    transform: scale(10);
+    background-color: purple;
+    animation: scale 1s linear 0.1s infinite alternate;
+    animation-delay: 1.4s;
+}
+.row span{
+    transform: scale(10);
+}
+.hidden{
+    display: none;
+}
+@-webkit-keyframes scale {
+    0% {
+        transform: scale(1);
+   }
+    50% {
+        transform: scale(10);
+   }
+    100% {
+        transform: scale(1);
+   }
+}
+@-webkit-keyframes rotate {
+    0% {
+        transform: rotate(-45deg);
+   }
+    50% {
+        transform: rotate(360deg);
+   }
+    100% {
+        transform: rotate(-45deg);
+   }
+}
+.men{
+    width: 250px;
+    height: 500px;
+    background:transparent url(../images/Screenshot_2022-10-25_121737-removebg-preview.png) no-repeat center;
+    background-size: cover;
+    margin: auto;
+    margin-top: 125px;
+    position: relative;
+    animation: men 0.5s linear 28s 1 forwards;
+}
+@keyframes men {
+    0% {
+        background:transparent url(../images/Screenshot_2022-10-25_121737-removebg-preview.png) no-repeat center;
+        background-size: cover;
+       }
+    100% {
+        background:transparent url(../images/Screenshot_2022-10-25_121759-removebg-preview.png) no-repeat center;
+        background-size: cover;
+       }
+}
+.container{
+    /* width: 100vw;
+    height: 100vh; */
+}
+.mobile{
+    width: 230px;
+    height: 150px;
+    background:transparent url(../images/mobile48-removebg-preview.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 21px;
+    right: 148px;
+    animation: rotate 3s linear 0s 1;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+   }
+    100% {
+        transform: rotate(360deg);
+   }
+}
+.money{
+    width: 146px;
+    height: 133px;
+    background:transparent url(../images/money-removebg-preview.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 189px;
+    right: 68px;
+    animation: money 3s linear 3s 1;
+}
+@keyframes money {
+    0% {
+        opacity:0.2;
+   }
+    100% {
+        opacity: 1;
+        transform: scale(1.15);
+ }
+}
+.love{
+    width: 77px;
+    height: 64px;
+    background: transparent url(../images/love7.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 386px;
+    right: 119px;
+    animation: love 3s linear 6s 2;
+}
+@keyframes love {
+    0% {
+        transform: scale(1);
+   }
+   50%{
+    transform: scale(0.5);
+   }
+    100% {
+        transform: scale(1.5);
+   }
+}
+.game{
+    width:165px;
+    height: 100px;
+    background:transparent url(../images/Ataryc68a6afe82.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 493px;
+    right: 148px;
+    animation: game 2s linear 12s 1;
+}
+@keyframes game {
+    0% {
+        right: 0px;
+   }
+    100% {
+        right: 211px;   }
+}
+
+.films{
+    width: 134px;
+    height: 108px;
+    background:transparent url(../images/Screenshot_2022-10-25_124707-removebg-preview.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 493px;
+    left: 231px;
+    animation: film 2s linear 14s 1;
+}
+@keyframes film {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: 231px;
+    }
+}
+
+.sleep{
+    width: 185px;
+    height: 131px;
+    background: transparent url(../images/alarm_124108-removebg-preview.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 326px;
+    left: 164px;
+    animation: sleep 2s linear 16s 2;
+}
+@keyframes sleep {
+    0% {
+        transform: rotate(45deg);
+   }
+   /* 50%{
+    transform: rotate(-45);
+} */
+    100% {
+        transform: rotate(0deg);
+   }
+}
+.website{
+    width: 110px;
+    height: 133px;
+    background: transparent url(../images/website11-removebg-preview.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 208px;
+    left: 145px;
+    animation: website 7s linear 20s 1;
+}
+@keyframes website {
+    0% {
+        background: transparent url(../images/website11-removebg-preview.png) no-repeat center;
+        background-size: cover;
+   }
+   25%{
+    background: transparent url(../images/website1-removebg-preview.png) no-repeat center;
+    background-size: cover;
+   }
+   50%{
+    background: transparent url(../images/website111-removebg-preview.png) no-repeat center;
+    background-size: cover;
+
+   }
+    100% {
+        background: transparent url(../images/website1111-removebg-preview.png) no-repeat center;
+        background-size: cover;
+
+    }
+}
+.quran{
+    width: 149px;
+    height: 150px;
+    background: transparent url(../images/quranmed-removebg-preview.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 21px;
+    left: 220px;    
+    animation: quran 3s linear 27s 1;
+}
+@keyframes quran {
+    0% {
+        transform: scale(1);
+   }
+   50%{
+    transform: scale(0.5);
+   }
+    100% {
+        transform: scale(1.5);
+        box-shadow:2px 2px 149px 5px yellow;
+   }
+}
